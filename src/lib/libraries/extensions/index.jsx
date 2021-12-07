@@ -46,6 +46,9 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import nushimaImage from './nushima/image.png';
+import nushimaButton from './nushima/logo.png';
+
 export default [
     {
         name: (
@@ -317,5 +320,25 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: '沼島汽船サポート',
+        extensionId: 'nushima',
+        collaborator: 'smilkobuta',
+        iconURL: nushimaImage,
+        insetIconURL: nushimaButton,
+        description: (
+            <FormattedMessage
+                defaultMessage="Scratch版の沼島汽船サポート機能です"
+                description="沼島汽船の運行情報を取得"
+                id="gui.extension.nushima.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        bluetoothRequired: false,
+        helpLink: 'https://scratch.mit.edu/wedo'
+
     }
 ];
